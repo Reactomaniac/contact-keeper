@@ -16,7 +16,7 @@ const ContactItem = ({ contact }) => {
             (type === "professional" ? "badge-success" : "badge-primary")
           }
         >
-          {type.chartAt(0).toUpperCase() + type.slice(1)}
+          {type.charAt(0).toUpperCase() + type.slice(1)}
         </span>
       </h3>
       <ul className="list">
