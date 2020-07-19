@@ -22,7 +22,7 @@ const Login = props => {
       setAlert(error, "danger")
       clearErrors()
     }
-  }, [error, isAuthenticated, props.history])
+  }, [error, isAuthenticated, props.history, clearErrors, setAlert])
 
   const { email, password } = user
 

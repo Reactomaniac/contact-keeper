@@ -17,7 +17,7 @@ const Register = props => {
       setAlert(error, "danger")
       clearErrors()
     }
-  }, [error, isAuthenticated, props.history])
+  }, [error, isAuthenticated, props.history, clearErrors, setAlert])
 
   const [user, setUser] = useState({
     name: "",
